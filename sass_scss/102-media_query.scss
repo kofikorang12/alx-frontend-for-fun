@@ -1,0 +1,33 @@
+/* Assign: Font size 20px to h1 tags. Font size 18px to h1 tags, when your screen width is smaller than 960px. Font size 16px to h1 tags, when your screen width is smaller than 640px. Font size 14px to h1 tags, when your screen width is smaller than 320px. Text color #1D1D1D to h1.small tags, when your screen width is smaller than 320px */
+
+$heading-font-size-xlarge: 20px;
+$heading-font-size-large: 18px;
+$heading-font-size-medium: 16px;
+$heading-font-size-small: 14px;
+$black-soft: #1D1D1D;
+
+h1 {
+	font-size: $heading-font-size-xlarge;
+}
+
+@media screen and (max-width: 960px) {
+	h1 {
+		font-size: $heading-font-size-large;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: $heading-font-size-medium;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: $heading-font-size-small;
+
+		&.small {
+			color: $black-soft;
+		}
+	}
+}

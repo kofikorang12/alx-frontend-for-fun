@@ -1,0 +1,15 @@
+/* extended */
+
+.info, %default-size-font {
+	font-size: 12px;
+}
+
+.success {
+    @extend .info;
+    color: #00FF00;
+}
+
+.warning {
+	@extend %default-size-font;
+	color: #FF0000;
+}

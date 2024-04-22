@@ -1,0 +1,11 @@
+/* Assign: Text color #3D3D3D to elements inside body tags. Text color #FF0000 to any elements of class .red inside body tags */
+
+$grey-dark: #3D3D3D;
+$red: #FF0000;
+
+body {
+	color: $grey-dark;
+	.red {
+		color: $red;
+	}
+}

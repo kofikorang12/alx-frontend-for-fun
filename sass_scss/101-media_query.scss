@@ -1,0 +1,15 @@
+/* Assign: Font size 20px to h1 tags. Font size 14px to h1 tags, when your screen width is smaller than 320px */
+
+$font-size-big: 20px;
+$font-size-small: 14px;
+$mobile-breakpoint-small: 320px;
+
+h1 {
+	font-size: $font-size-big;
+}
+
+@media screen and (max-width: $mobile-breakpoint-small) {
+	h1 {
+        font-size: $font-size-small;
+    }
+}
